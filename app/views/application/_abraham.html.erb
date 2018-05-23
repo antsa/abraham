@@ -38,7 +38,7 @@
     },
     <% end %>
     <% if step.key?('classes') %>
-    classes: "<%= step['classes'] %>",
+    classes: "<%= Rails.configuration.abraham.default_theme %> <%= step['classes'] %>",
     <% end %>
     buttons: [
     <% if index == 0 %>
